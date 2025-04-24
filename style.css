@@ -1,0 +1,38 @@
+body {
+  margin: 0; /*menghilangkan jarak putih di pinggir halaman*/
+  font-family: Arial, Helvetica, sans-serif; /*jenis font yg digunakan*/
+}
+
+.navbar { /* .navbar ini untuk membahas atribut navbar di html*/
+  background-color: rgb(97, 171, 241); /* ini untuk mengubah background navbarnya */
+  padding: 10px 1px;  /* Jarak antar teks dan jarak ke pinggiran navbar*/
+  position: fixed;         /* Navbar nempel di atas dan ga bergerak kalau di scrool*/
+  top: 0; /*nempelnya di paling atas */
+  width: 100%; /*lebarnya jadi sepanjang layar*/
+  z-index: 1000; /*layer dari navbar tetap paling depan ga ketimpa apapun */
+}
+
+.nav-list {
+  list-style: none; /* menghilangkan bullet di list*/
+  margin: 5; /*menghilangkan spasi bawaan di nav list*/
+  padding: 0; /*menghilangkan spasi bawaan di nav list*/
+  display: flex; /*Mengubah daftar menjadi baris horizontal*/
+  justify-content: flex-end; /*Membuat menu sejajar ke kanan (bisa diubah jadi center, space-between, dll)*/
+}
+.nav-list li {
+  margin-right: 25px; /*Memberi jarak antar menu (antar <li>) di navbar*/
+}
+
+.nav-list a {
+  color: white; /* warna tulisan di nav list */
+  text-decoration: none; /*menghilangkan garis bawah pada link*/
+  font-weight: bold; /*Menebalkan teks link*/
+}
+
+.nav-list a:hover { /*link berubah saat mouse diarahkan ke link*/
+  color: #010163; /*warna dari hover*/
+}
+
+section {
+  margin-top: 60px; /* Supaya konten nggak ketutup navbar */
+}
