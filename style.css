@@ -33,6 +33,10 @@ body {
   color: #010163; /*warna dari hover*/
 }
 
-section {
+.section {
   margin-top: 60px; /* Supaya konten nggak ketutup navbar */
+}
+
+.image_sampul {
+  width:500px;height:600px;
 }
